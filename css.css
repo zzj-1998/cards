@@ -1,0 +1,156 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    border: 0 black;
+    background-color: black;
+}
+dialog div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+dialog div img{
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px;
+}
+#wrapper {
+    width: 1000px;
+    height: 800px;
+    border: 1px solid black;
+    position: relative;
+    background-image: url("80.jpg");
+    background-size: 100% 100%;
+    z-index: 1;
+}
+#install {
+    width: 200px;
+    height: 800px;
+    background-image: url("39.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#install button:first-child {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    color: black;
+}
+#install button:nth-child(2) {
+    width: 100px;
+    height: 50px;
+    background-image: url("70.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#time {
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+}
+#inner {
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 750px;
+}
+.brand {
+    width: 150px;
+    height: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+}
+.frontbrand {
+    width: 150px;
+    height: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+}
+.backbrand {
+    width: 150px;
+    height: 150px;
+    background-size: 100% 100%;
+    z-index: -1;
+    position: absolute;
+}
+#start {
+    width: 1000px;
+    height: 100px;
+    color: white;
+    font-size: 50px;
+    text-shadow: 5px 5px 0 #666,
+    7px 7px 0 #eee;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 700px;
+}
+#ready {
+    width: 100px;
+    height: 50px;
+    border: 1px solid yellow;
+    background-color: yellow;
+    position: absolute;
+    top: 750px;
+}
+#start:hover {
+    font-weight: bold;
+}
+@keyframes btn {
+    0% {transform: rotateY(0deg)}
+    50% {transform: rotateY(180deg)}
+    100% {transform: rotateY(360deg)}
+}
+@keyframes ready {
+    0% {width: 100px}
+    50% {width: 550px}
+    100% {width: 1000px}
+}
+@keyframes outDiv {
+    0% {transform: rotateY(0deg)}
+    50% {transform: rotateY(90deg)}
+    100% {transform: rotateY(90deg)}
+}
+@keyframes inDiv {
+    0% {transform: rotateY(180deg)}
+    50% {transform: rotateY(270deg)}
+    100% {transform: rotateY(360deg)}
+}
+@keyframes reoutDiv {
+    0% {transform: rotateY(90deg)}
+    50% {transform: rotateY(90deg)}
+    100% {transform: rotateY(0deg)}
+}
+@keyframes reinDiv {
+    0% {transform: rotateY(360deg)}
+    50% {transform: rotateY(270deg)}
+    100% {transform: rotateY(180deg)}
+}
+@keyframes brand {
+    0% {opacity: 1}
+    50% {opacity: 0.5}
+    100% {opacity: 0}
+}
